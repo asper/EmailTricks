@@ -69,6 +69,19 @@ class EmailTricks {
         }
         return $matches[1].'="'.EMAIL_TRICKS_HOST.$matches[2].'"';
     }
+
+/**
+ * Images
+ */
+    public static function images ( $html = null, $options = array() ) {
+        $defaults = array(
+            'size' => false,
+            'alt' => true,
+            'block' => true
+        );
+        $options = array_merge( $defaults, $options );
+        // TODO
+    }
     
 
 	
